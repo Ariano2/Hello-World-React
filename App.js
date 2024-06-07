@@ -1,4 +1,3 @@
-const heading=document.createElement("h1");
-heading.innerHTML="Hello World using JS!";
-const container=document.getElementById('container');
-container.appendChild(heading);
+const heading=React.createElement('h1',{id:'heading'},"Hello World using React!");
+const root=ReactDOM.createRoot(document.getElementById('container'));
+root.render(heading);
