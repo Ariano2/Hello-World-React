@@ -1,14 +1,157 @@
-* {
+body {
   margin: 0;
 }
 .header {
-  background-color: aliceblue;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding: 1%;
+  padding: 10px 20px;
+  margin: 10px;
+  border: 1px solid black;
 }
 
-.header input {
+.header-logo > img {
+  width: 200px;
+}
+
+.nav-items {
+  display: flex;
+}
+
+ul.nav-items {
+  list-style-type: none;
   font-size: 24px;
+}
+
+ul.nav-items li {
+  padding: 0px 20px;
+}
+
+ul.nav-items li a {
+  text-decoration: none;
+  color: black;
+}
+
+.res-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 10px;
+}
+.res-card {
+  width: 300px;
+  height: auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #f0f0f0;
+}
+
+.res-card:hover {
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+.res-logo {
+  width: 100%;
+  height: 50%;
+}
+
+.card,
+.shimmer-card-container {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  text-decoration: none;
+  color: #333333;
+}
+
+.search,
+.shimmer-search-container {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  background-color: #333333;
+  color: #ffffff;
+  padding: 50px;
+}
+
+#filter,
+.shimmer-search {
+  padding: 10px;
+  font-size: 16px;
+  width: 80%;
+}
+
+#filter-btn,
+#filter-stop,
+.shimmer-filter-stop,
+.shimmer-fiter {
+  flex-grow: 0;
+  width: 5%;
+  height: auto;
+  margin: 10px 0;
+}
+
+.shimmer-filter {
+  width: 5%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.shimmer-card {
+  margin: 20px;
+  width: 300px;
+  height: 600px;
+  background-color: #f0f0f0;
+}
+
+.login,
+.logout {
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+.login {
+  background-color: #4caf50;
+  color: #ffffff;
+}
+
+.logout {
+  background-color: #ff0000;
+  color: #ffffff;
+}
+
+.menu {
+  text-align: center;
+}
+
+.dish-container {
+  font-size: 16px;
+  width: 20%;
+  height: auto;
+  margin: 0 5px;
+}
+
+.dish-container p {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f0f0f0;
+  padding: 10px;
+}
+
+.menu-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.user-card {
+  border: 1px solid black;
+  padding: 10px;
+  width: 50%;
+  text-align: center;
+  margin: 10px auto;
 }
